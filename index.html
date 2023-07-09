@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Let's create a number train that moves</h1>
+      <h1>from smallest to largest.</h1>
+      <div class="card" id="game-container">
+        <h2>Options</h2>
+        <div id="options-container" class="option-row"></div>
+        <h2>Sort Numbers</h2>
+        <div id="input-container" class="input-row"></div>
+        <div class="button-row">
+          <button id="check-button" onclick="checkResult()">Check</button>
+          <button id="reset-button" onclick="resetGame()">Reset</button>
+        </div>
+      </div>
+      <div class="card" id="correct-page" style="display: none">
+        <h2>Congratulations!</h2>
+        <p>Your answer is correct.</p>
+        <!-- <img src="happy.jpg" alt="Confetti" /> -->
+        <img src="happy.jpg" alt="Confetti" height="auto" width="750px"/>
+        <button
+          id="correct-reset-button"
+          class="play-again-button"
+          onclick="resetGame()"
+        >
+          Play Again
+        </button>
+      </div>
+
+      <div class="card" id="wrong-page" style="display: none">
+        <h2>Oops!</h2>
+        <p>Your answer is incorrect.</p>
+        <img src="sad.jpeg" alt="Sad Face" height="auto" width="750px" />
+        <button
+          id="wrong-reset-button"
+          class="try-again-button"
+          onclick="resetGame()"
+        >
+          Try Again
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

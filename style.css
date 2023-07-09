@@ -1,0 +1,219 @@
+body {
+  background-image: url("kids.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #ff6699;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  text-align: center;
+  color: #ff6699;
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.option-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.option,
+.input {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  border: 2px solid #ff6699;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #ff6699;
+  font-size: 24px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.option:hover,
+.input:hover {
+  background-color: #ff6699;
+  color: #ffffff;
+}
+
+.option:active,
+.input:active {
+  transform: scale(0.95);
+}
+
+.option:empty::before,
+.input:empty::before {
+  content: " ";
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.input:empty::before {
+  content: "?";
+  font-size: 24px;
+  color: #cccccc;
+}
+
+.input-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+#check-button,
+#reset-button {
+  background-color: #ff6699;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#check-button:disabled,
+#reset-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+#check-button:not(:disabled):hover,
+#reset-button:not(:disabled):hover {
+  background-color: #ff4d8c;
+}
+
+#check-button:not(:disabled):active,
+#reset-button:not(:disabled):active {
+  background-color: #ff1f65;
+}
+
+.correct-page,
+.wrong-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.correct-page h2,
+.wrong-page h2 {
+  font-size: 36px;
+  color: #ff6699;
+  margin-bottom: 20px;
+}
+
+.correct-page p,
+.wrong-page p {
+  font-size: 24px;
+  color: #666666;
+  margin-bottom: 40px;
+}
+
+.correct-page img,
+.wrong-page img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.correct-page .play-again-button,
+.wrong-page .try-again-button {
+  background-color: #ff6699;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.correct-page .play-again-button:hover,
+.wrong-page .try-again-button:hover {
+  background-color: #ff4d8c;
+}
+
+.correct-page .play-again-button:active,
+.wrong-page .try-again-button:active {
+  background-color: #ff1f65;
+}
+
+#options-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#options-container .option {
+  float: left;
+}
+
+#options-container .option:last-child {
+  margin-right: 0;
+}
+
+#input-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#input-container .input {
+  float: left;
+}
+
+#input-container .input:last-child {
+  margin-right: 0;
+}
