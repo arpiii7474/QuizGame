@@ -159,6 +159,32 @@ h1 {
   color: #666666;
   margin-bottom: 40px;
 }
+.correct-page .play-again-button,
+.wrong-page .try-again-button {
+  background-color: #ff6699;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.correct-page .play-again-button:hover,
+.wrong-page .try-again-button:hover {
+  background-color: #ff4d8c;
+  transform: translateY(-2px);
+}
+
+.correct-page .play-again-button:active,
+.wrong-page .try-again-button:active {
+  background-color: #ff1f65;
+  transform: translateY(1px);
+}
 
 .correct-page img,
 .wrong-page img {
@@ -167,28 +193,6 @@ h1 {
   margin-bottom: 20px;
 }
 
-.correct-page .play-again-button,
-.wrong-page .try-again-button {
-  background-color: #ff6699;
-  color: #ffffff;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.correct-page .play-again-button:hover,
-.wrong-page .try-again-button:hover {
-  background-color: #ff4d8c;
-}
-
-.correct-page .play-again-button:active,
-.wrong-page .try-again-button:active {
-  background-color: #ff1f65;
-}
 
 #options-container::after {
   content: "";
